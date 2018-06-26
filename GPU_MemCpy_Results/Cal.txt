@@ -1,0 +1,26 @@
+Calculations
+
+40504 items totalling 6.6 GB
+6.6/40504 = 0.00016294686 GB = 162946.869 bytes is size of one image (avg.)
+162946.869*32 = 5214299.822 bytes is size of of a batch of 32 images (5.215 MB)
+
+447.61us (microseconds) to transfer one batch
+25W approx. for 32 images
+
+1 batch contains 32 images
+x batches contain 40504 images
+
+x = 40504/32 = 1265.75 batches = 1266 approx.
+
+1 batch takes 447.61 microseconds
+1266 batches take x microseconds
+
+x = 1266*447.61 = 566674.26 us
+
+total time = 566674.26 * 10^-6 seconds
+
+E = P*t
+E = 25W * 566674.26 * 10^-6 seconds
+E = 14.1668 J
+
+

@@ -1,0 +1,20 @@
+#PBS -A PAS1273
+#PBS -l walltime=12:00:00 
+#PBS -l nodes=1:gpus=1
+#PBS -l mem=24gb
+#PBS -N name of the job
+
+
+module load python/2.7
+module load cuda/8.0.61
+
+
+cd ..
+
+./runtest_10p_01e_reinject
+
+
+
+
+
+

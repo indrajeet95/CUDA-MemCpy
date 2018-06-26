@@ -1,0 +1,18 @@
+==14218== NVPROF is profiling process 14218, command: ./profile_test
+==14218== Profiling application: ./profile_test
+==14218== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 56.98%  592.76us         1  592.76us  592.76us  592.76us  [CUDA memcpy DtoH]
+ 43.02%  447.61us         1  447.61us  447.61us  447.61us  [CUDA memcpy HtoD]
+
+==14218== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 99.19%  320.53ms         1  320.53ms  320.53ms  320.53ms  cudaMalloc
+  0.41%  1.3133ms         2  656.66us  438.94us  874.37us  cudaMemcpy
+  0.29%  949.29us         1  949.29us  949.29us  949.29us  cuDeviceTotalMem
+  0.10%  313.95us        91  3.4490us     310ns  118.06us  cuDeviceGetAttribute
+  0.01%  27.655us         1  27.655us  27.655us  27.655us  cuDeviceGetName
+  0.00%  4.2370us         3  1.4120us     437ns  3.1950us  cuDeviceGetCount
+  0.00%  1.8020us         3     600ns     320ns     977ns  cuDeviceGet
+=>> PBS: job killed: walltime 83 exceeded limit 60
+
